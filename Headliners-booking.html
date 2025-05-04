@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Headliners by Morgan</title>
+  <style>
+    :root {
+      --primary-color: #B22222;
+      --dark-bg: #1e1e1e;
+      --light-bg: #f9f9f9;
+      --text-color: #333;
+      --light-text: #f1f1f1;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--light-bg);
+      color: var(--text-color);
+      padding: 20px;
+      transition: background 0.3s, color 0.3s;
+    }
+    body.dark-mode {
+      background: var(--dark-bg);
+      color: var(--light-text);
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    body.dark-mode .container {
+      background: #2c2c2c;
+    }
+    h1, h2 {
+      color: var(--primary-color);
+    }
+    .service {
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+    }
+    .btn {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #8B0000;
+    }
+    .contact, .about, .testimonials, .gallery {
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 100px;
+      margin: 5px;
+      border-radius: 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    @media screen and (max-width: 600px) {
+      .gallery img { width: 80px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Headliners by Morgan</h1>
+    <p><em>Over 20 Years of Haircare Excellence – Now in Gurnee!</em></p><div class="booking">
+  <h2>Book an Appointment</h2>
+  <form action="mailto:morgancarroll8@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="Name" placeholder="Full Name" required />
+    <input type="email" name="Email" placeholder="Email Address" required />
+    <input type="tel" name="Phone" placeholder="Phone Number" required />
+    <label for="service">Choose a Service:</label>
+    <select id="service" name="Service" required>
+      <option value="">--Select a Service--</option>
+      <option>Haircut - $30</option>
+      <option>Color Treatment - $60</option>
+      <option>Highlights - $75</option>
+      <option>Perm - $70</option>
+      <option>Deep Conditioning - $25</option>
+    </select>
+    <label for="date">Preferred Date:</label>
+    <input type="date" name="Date" required />
+    <label for="time">Preferred Time:</label>
+    <input type="time" name="Time" required />
+    <button type="submit" class="btn">Submit Booking</button>
+  </form>
+</div>
+
+<div class="about">
+  <h2>About Morgan</h2>
+  <p>With over 20 years of experience in professional haircare, Morgan now serves clients in Gurnee and the Northwest Suburbs of Illinois with passion and precision.</p>
+</div>
+
+<div class="services">
+  <h2>Our Services</h2>
+  <div class="service"><strong>Haircuts:</strong> Women, Men, Kids</div>
+  <div class="service"><strong>Color Treatments:</strong> Full color, root touch-ups</div>
+  <div class="service"><strong>Highlights:</strong> Foils, balayage</div>
+  <div class="service"><strong>Perms:</strong> Curl and texture options</div>
+  <div class="service"><strong>Add-ons:</strong> Deep conditioning, scalp massage</div>
+</div>
+
+<div class="gallery">
+  <h2>Style Gallery</h2>
+  <img src="https://via.placeholder.com/100" alt="Style 1" />
+  <img src="https://via.placeholder.com/100" alt="Style 2" />
+  <img src="https://via.placeholder.com/100" alt="Style 3" />
+</div>
+
+<div class="testimonials">
+  <h2>Client Testimonials</h2>
+  <p>"Morgan has been my go-to stylist for years—amazing every time!"</p>
+  <p>"Love the new Gurnee location! So convenient and stylish."</p>
+</div>
+
+<div class="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:morgancarroll8@gmail.com">morgancarroll8@gmail.com</a></p>
+  <p>Phone: <a href="tel:18476681846">1-847-668-1846</a></p>
+  <p>Location: Gurnee, IL – Serving the Northwest Suburbs</p>
+</div>
+
+<div style="margin-top: 20px;">
+  <button class="btn" onclick="document.body.classList.toggle('dark-mode')">Toggle Dark Mode</button>
+</div>
+
+  </div>
+</body>
+</html>
